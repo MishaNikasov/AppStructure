@@ -24,6 +24,7 @@ rootProject.name = "App Structure"
 
 include(":app")
 include(":core:ui")
+include(":core:design")
 include(":core:network")
 include(":feature:hub")
 include(":feature:home")

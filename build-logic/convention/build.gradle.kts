@@ -10,6 +10,8 @@ repositories {
 dependencies {
     compileOnly(libs.android.gradlePlugin)
     compileOnly(libs.kotlin.gradlePlugin)
+    compileOnly(libs.ksp.gradlePlugin)
+    compileOnly(libs.room.gradlePlugin)
 }
 
 tasks {
@@ -44,6 +46,14 @@ gradlePlugin {
         register("hilt") {
             id = libs.plugins.appstructure.hilt.get().pluginId
             implementationClass = "HiltConventionPlugin"
+        }
+        register("androidRoom") {
+            id = libs.plugins.appstructure.android.room.get().pluginId
+            implementationClass = "AndroidRoomConventionPlugin"
+        }
+        register("jvmLibrary") {
+            id = libs.plugins.appstructure.jvm.library.get().pluginId
+            implementationClass = "JvmLibraryConventionPlugin"
         }
     }
 }

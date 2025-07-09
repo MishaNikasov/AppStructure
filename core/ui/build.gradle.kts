@@ -4,5 +4,5 @@ plugins {
 }
 
 android {
-    namespace = "com.nikasov.appstructure.ui"
+    namespace = "com.nikasov.ui"
 }

@@ -1,15 +1,10 @@
-:app                         // точка входу (MainActivity, DI root)
-:core:ui                     // компоненти UI
-:core:design                 // тема, шрифти, кольори, іконкиб, спейсинг
-:core:network                // Retrofit, interceptors
-:core:database               // Room 
-:core:common                 // extensions, helpers, DateFormatter и т.д.
+## 🗂 Проєктна структура
 
-:domain:auth                 // інтерфейси, use cases, моделі (auth)
-:domain:user                 // ..
+> 🧱 Структура дотримується підходу **Clean Architecture** з поділом на core, domain, data та features модулі.
 
-:data:auth                   // реалізація AuthRepository
-:data:user                   // ..
+- **:core** — фундаментальні речі, які не залежать від домену.
+- **:domain** — бізнес-логіка, use cases, інтерфейси.
+- **:data** — реалізації репозиторіїв, робота з мережами / БД.
+- **:features** — екрани, ViewModel, логіка взаємодії з UI.
 
-:features:login              // UI + ViewModel..
-:features:onboarding         // ..
+---

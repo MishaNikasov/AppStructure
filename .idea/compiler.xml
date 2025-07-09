@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <bytecodeTargetLevel target="21">
+      <module name="App_Structure.buildSrc" target="21" />
+      <module name="App_Structure.buildSrc.main" target="21" />
+      <module name="App_Structure.buildSrc.test" target="21" />
+      <module name="App_Structure.domain.hub" target="21" />
+      <module name="App_Structure.domain.onboarding" target="11" />
+      <module name="App_Structure.domain.onboarding.main" target="11" />
+      <module name="App_Structure.domain.onboarding.test" target="11" />
+      <module name="App_Structure.feature.mylibrary" target="21" />
+      <module name="App_Structure.feature.settings" target="21" />
+      <module name="build-logic.main" target="21" />
+      <module name="build-logic.test" target="21" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

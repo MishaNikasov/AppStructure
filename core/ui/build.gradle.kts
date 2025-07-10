@@ -6,3 +6,7 @@ plugins {
 android {
     namespace = "com.nikasov.ui"
 }
+
+dependencies {
+    implementation(projects.core.design)
+}

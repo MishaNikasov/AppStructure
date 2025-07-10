@@ -7,5 +7,5 @@ android {
 }
 
 dependencies {
-    implementation(project(":feature:home"))
+    implementation(projects.feature.home)
 }

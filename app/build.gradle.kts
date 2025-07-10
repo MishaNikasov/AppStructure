@@ -20,7 +20,7 @@ android {
 }
 
 dependencies {
-    implementation(project(":feature:hub"))
+    implementation(projects.feature.hub)
 
     implementation(libs.androidx.activity.compose)
     implementation(libs.androidx.compose.material)

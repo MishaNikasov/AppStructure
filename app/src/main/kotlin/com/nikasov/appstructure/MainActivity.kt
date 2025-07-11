@@ -5,6 +5,7 @@ import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
 import com.nikasov.appstructure.navigation.graph.RootNavHost
+import com.nikasov.theme.AppTheme
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
@@ -14,7 +15,11 @@ class MainActivity : ComponentActivity() {
         actionBar?.hide()
         setContent {
             enableEdgeToEdge()
-            RootNavHost()
+            AppTheme(
+                content = {
+                    RootNavHost()
+                }
+            )
         }
     }
 }

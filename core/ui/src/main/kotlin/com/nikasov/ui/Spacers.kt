@@ -1,4 +1,4 @@
-package com.nikasov.design
+package com.nikasov.ui
 
 import android.annotation.SuppressLint
 import androidx.compose.foundation.layout.ColumnScope
@@ -9,7 +9,7 @@ import androidx.compose.foundation.layout.width
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.NonRestartableComposable
 import androidx.compose.ui.Modifier
-import com.nikasov.theme.PacasoTheme.dimensions
+import com.nikasov.theme.AppTheme.dimensions
 
 @SuppressLint("ComposableNaming")
 object VerticalSpacer {

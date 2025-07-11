@@ -18,11 +18,11 @@ data class Dimensions(
     val spacingGigantic: Dp = 64.dp,
 
     /** Button **/
-    val buttonHeightSmall: Dp = 20.dp,
-    val buttonHeightMedium: Dp = 32.dp,
-    val buttonHeightLarge: Dp = 44.dp,
-    val buttonHeightExtraLarge: Dp = 52.dp,
-    val buttonShapeCornerRadius: Dp = 8.dp,
+    val buttonHeightSmall: Dp = 40.dp,
+    val buttonHeightMedium: Dp = 48.dp,
+    val buttonHeightLarge: Dp = 52.dp,
+    val buttonShapeCornerRadius: Dp = 60.dp,
+    val buttonSpacing: Dp = 8.dp,
 
     /** Icon **/
     val iconSizeExtraTiny: Dp = 12.dp,
@@ -35,6 +35,9 @@ data class Dimensions(
 
     /** Divider **/
     val dividerThickness: Dp = 1.dp,
+
+    /** Border **/
+    val borderThickness: Dp = 2.dp,
 
     /** Input field **/
     val inputFieldHeight: Dp = 36.dp,

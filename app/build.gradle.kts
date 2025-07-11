@@ -20,6 +20,7 @@ android {
 }
 
 dependencies {
+    implementation(projects.core.design)
     implementation(projects.feature.hub)
 
     implementation(libs.androidx.activity.compose)

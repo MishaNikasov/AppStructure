@@ -1,12 +1,15 @@
 package com.nikasov.design
 
 import androidx.compose.material3.Typography
+import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.sp
 
-val Typography.displayHuge
+val Typography.body_1
     get() = displayLarge.copy(
-        fontSize = 44.sp,
-        lineHeight = 48.sp
+        fontSize = 16.sp,
+        lineHeight = 24.sp,
+        letterSpacing = 0.sp,
+        fontWeight = FontWeight.Medium,
     )
 
 //private val interFontFamily = FontFamily(
@@ -17,6 +20,7 @@ val Typography.displayHuge
 //)
 
 internal val AppTypography = Typography(
+
 //    displayLarge = TextStyle(fontFamily = interFontFamily, fontSize = 34.sp, lineHeight = 41.sp, lineBreak = LineBreak.Heading, hyphens = Hyphens.Auto),
 //    displayMedium = TextStyle(fontFamily = interFontFamily, fontSize = 28.sp, lineHeight = 34.sp, lineBreak = LineBreak.Heading, hyphens = Hyphens.Auto)
 )

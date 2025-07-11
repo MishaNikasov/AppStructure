@@ -11,8 +11,6 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.material3.ExperimentalMaterial3ExpressiveApi
 import androidx.compose.material3.HorizontalFloatingToolbar
-import androidx.compose.material3.Icon
-import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Scaffold
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
@@ -33,6 +31,8 @@ import com.nikasov.appstructure.hub.navigation.HubNavHost
 import com.nikasov.appstructure.hub.navigation.bottomNavigationItems
 import com.nikasov.appstructure.hub.navigation.navigateHomeDetailsGraph
 import com.nikasov.appstructure.hub.navigation.navigateToHomeGraph
+import com.nikasov.theme.AppTheme.appColors
+import com.nikasov.theme.AppTheme.dimensions
 
 @Composable
 fun HubScreen(
@@ -74,7 +74,7 @@ private fun HubScreen(
                             .weight(1f)
                             .let { boxModifier ->
                                 if (currentDestination?.hierarchy?.any { it.hasRoute(item.graph::class) } == true) {
-                                    boxModifier.background(MaterialTheme.colorScheme.surface)
+                                    boxModifier.background(appColors.sand600)
                                 } else {
                                     boxModifier
                                 }
@@ -87,10 +87,9 @@ private fun HubScreen(
                                 }
                             }
                     ) {
-                        Icon(
-                            painter = item.icon,
-                            contentDescription = null,
-                            modifier = Modifier.size(24.dp, 24.dp)
+                        item.icon(
+                            modifier = Modifier.size(dimensions.iconSizeNormal),
+                            tint = appColors.primary500,
                         )
                     }
                 }

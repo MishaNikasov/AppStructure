@@ -1,8 +1,7 @@
 package com.nikasov.appstructure.hub.navigation
 
 import androidx.compose.runtime.Composable
-import androidx.compose.ui.graphics.painter.Painter
-import androidx.compose.ui.res.painterResource
+import com.nikasov.ui.AppIcon
 
 val bottomNavigationItems = listOf(
     NavigationItem.Home,
@@ -20,11 +19,11 @@ sealed interface NavigationItem {
             is Details -> HomeDetailsGraph
         }
 
-    val icon: Painter
+    val icon: AppIcon
         @Composable get() =
             when (this) {
-                is Home -> painterResource(android.R.drawable.ic_menu_add)
-                is Details -> painterResource(android.R.drawable.ic_dialog_dialer)
+                is Home -> AppIcon.Home
+                is Details -> AppIcon.Details
             }
 
 }

@@ -7,12 +7,4 @@ interface Logger {
     fun i(tag: String, message: String)
     fun e(tag: String, e: Exception, message: String?)
     fun e(e: Exception, message: String?)
-
-    companion object {
-        private var instance: Logger = DefaultLogger
-
-        fun set(logger: Logger) {
-            instance = logger
-        }
-    }
 }

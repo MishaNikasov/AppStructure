@@ -67,7 +67,7 @@ fun AppTheme(
 }
 
 object AppTheme {
-    val colorScheme: ColorScheme @Composable @ReadOnlyComposable get() = MaterialTheme.colorScheme
+    val materialColorScheme: ColorScheme @Composable @ReadOnlyComposable get() = MaterialTheme.colorScheme
     val typography: Typography @Composable @ReadOnlyComposable get() = MaterialTheme.typography
     val shapes: Shapes @Composable @ReadOnlyComposable get() = MaterialTheme.shapes
     val dimensions: Dimensions @Composable @ReadOnlyComposable get() = LocalDimensions.current

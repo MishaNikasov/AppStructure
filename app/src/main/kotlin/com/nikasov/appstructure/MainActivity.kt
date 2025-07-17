@@ -4,22 +4,33 @@ import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
-import com.nikasov.appstructure.navigation.graph.RootNavHost
+import androidx.compose.runtime.CompositionLocalProvider
+import com.nikasov.appstructure.ui.App
+import com.nikasov.common.logger.Logger
+import com.nikasov.common_android.logger.LocalLogger
 import com.nikasov.theme.AppTheme
 import dagger.hilt.android.AndroidEntryPoint
+import javax.inject.Inject
 
 @AndroidEntryPoint
 class MainActivity : ComponentActivity() {
+
+    @Inject
+    lateinit var logger: Logger
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        actionBar?.hide()
         setContent {
             enableEdgeToEdge()
-            AppTheme(
-                content = {
-                    RootNavHost()
-                }
-            )
+            CompositionLocalProvider(
+                LocalLogger provides logger
+            ) {
+                AppTheme(
+                    content = {
+                        App()
+                    }
+                )
+            }
         }
     }
 }

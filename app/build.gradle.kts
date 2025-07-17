@@ -22,6 +22,7 @@ android {
 dependencies {
     implementation(projects.core.design)
     implementation(projects.feature.hub)
+    implementation(projects.core.commonAndroid)
 
     implementation(libs.androidx.activity.compose)
     implementation(libs.androidx.compose.material)

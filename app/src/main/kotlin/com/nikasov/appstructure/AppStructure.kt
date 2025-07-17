@@ -1,8 +1,7 @@
 package com.nikasov.appstructure
 
-import android.app.Application
-
+import com.nikasov.common_android.AppStructureApplication
 import dagger.hilt.android.HiltAndroidApp
 
 @HiltAndroidApp
-class AppStructure : Application()
+class AppStructure : AppStructureApplication()

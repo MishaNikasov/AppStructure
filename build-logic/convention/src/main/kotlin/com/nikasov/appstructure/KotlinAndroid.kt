@@ -30,4 +30,9 @@ internal fun Project.configureKotlinJvm() {
         sourceCompatibility = JavaVersion.VERSION_21
         targetCompatibility = JavaVersion.VERSION_21
     }
+//    extensions.configure<KotlinJvmProjectExtension> {
+//        compilerOptions {
+//            jvmTarget.set(JvmTarget.JVM_21)
+//        }
+//    }
 }

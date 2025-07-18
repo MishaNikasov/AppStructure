@@ -1,4 +1,4 @@
-package com.nikasov.appstructure.navigation.graph
+package com.nikasov.appstructure.navigation
 
 import androidx.compose.runtime.Composable
 import androidx.navigation.compose.NavHost

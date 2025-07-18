@@ -8,7 +8,6 @@ import javax.inject.Inject
 class AndroidStringResources @Inject constructor(
     @ApplicationContext private val context: Context
 ) : StringResources {
-
     override fun getString(id: Int, vararg args: Any): String {
         return context.getString(id, *args)
     }

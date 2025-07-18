@@ -16,5 +16,5 @@ abstract class CommonAndroidModule {
     abstract fun bindLogger(logger: AndroidLogger): Logger
 
     @Binds
-    abstract fun bindLogger(logger: AndroidStringResources): StringResources
+    abstract fun bindStringResources(resources: AndroidStringResources): StringResources
 }

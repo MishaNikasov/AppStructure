@@ -1,3 +1,5 @@
+@file:Suppress("UNUSED_RECEIVER_PARAMETER")
+
 package com.nikasov.appstructure.hub.ui
 
 import androidx.compose.runtime.Composable

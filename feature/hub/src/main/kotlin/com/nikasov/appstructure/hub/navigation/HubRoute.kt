@@ -11,7 +11,7 @@ import com.nikasov.appstructure.home.navigation.HomeRoute
 import com.nikasov.appstructure.home.navigation.homeDetailsScreen
 import com.nikasov.appstructure.home.navigation.homeScreen
 import com.nikasov.appstructure.home.navigation.homeSecondScreenScreen
-import com.nikasov.appstructure.hub.HubScreen
+import com.nikasov.appstructure.hub.ui.HubScreen
 import kotlinx.serialization.Serializable
 
 @Serializable

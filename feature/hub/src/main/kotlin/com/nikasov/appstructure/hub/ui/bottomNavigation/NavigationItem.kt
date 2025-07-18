@@ -1,6 +1,8 @@
-package com.nikasov.appstructure.hub.navigation
+package com.nikasov.appstructure.hub.ui.bottomNavigation
 
 import androidx.compose.runtime.Composable
+import com.nikasov.appstructure.hub.navigation.HomeDetailsGraph
+import com.nikasov.appstructure.hub.navigation.HomeGraph
 import com.nikasov.ui.AppIcon
 
 val bottomNavigationItems = listOf(

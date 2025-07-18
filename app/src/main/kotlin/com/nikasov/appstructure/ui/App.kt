@@ -10,7 +10,6 @@ import androidx.compose.ui.graphics.Color
 import com.nikasov.appstructure.navigation.RootNavHost
 
 @Composable
-
 fun App(
     modifier: Modifier = Modifier,
 ) {

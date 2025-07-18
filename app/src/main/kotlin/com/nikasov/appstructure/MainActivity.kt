@@ -2,6 +2,7 @@ package com.nikasov.appstructure
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
+import androidx.activity.SystemBarStyle
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
 import androidx.compose.runtime.CompositionLocalProvider
@@ -19,9 +20,14 @@ class MainActivity : ComponentActivity() {
     lateinit var logger: Logger
 
     override fun onCreate(savedInstanceState: Bundle?) {
+        enableEdgeToEdge(
+            SystemBarStyle.auto(
+                lightScrim = android.graphics.Color.TRANSPARENT,
+                darkScrim = android.graphics.Color.TRANSPARENT,
+            )
+        )
         super.onCreate(savedInstanceState)
         setContent {
-            enableEdgeToEdge()
             CompositionLocalProvider(
                 LocalLogger provides logger
             ) {

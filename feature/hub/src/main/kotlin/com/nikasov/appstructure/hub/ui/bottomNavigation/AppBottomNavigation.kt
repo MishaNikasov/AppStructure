@@ -23,6 +23,13 @@ import androidx.navigation.NavDestination.Companion.hierarchy
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.currentBackStackEntryAsState
 import androidx.navigation.compose.rememberNavController
+import com.nikasov.appstructure.hub.ui.bottomNavigationHeight
+import com.nikasov.appstructure.hub.ui.bottomNavigationHorizontalPadding
+import com.nikasov.appstructure.hub.ui.bottomNavigationItemSize
+import com.nikasov.appstructure.hub.ui.bottomNavigationItemSpacing
+import com.nikasov.appstructure.hub.ui.bottomNavigationRadius
+import com.nikasov.appstructure.hub.ui.bottomNavigationSpacing
+import com.nikasov.appstructure.hub.ui.bottomNavigationVerticalPadding
 import com.nikasov.theme.AppTheme.appColors
 import com.nikasov.theme.AppTheme.dimensions
 

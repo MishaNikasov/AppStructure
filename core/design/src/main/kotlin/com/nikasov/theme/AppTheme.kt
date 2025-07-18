@@ -14,6 +14,7 @@ import androidx.compose.runtime.ReadOnlyComposable
 import androidx.compose.runtime.staticCompositionLocalOf
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.luminance
+import com.nikasov.design.AppColors
 import com.nikasov.design.AppShapes
 import com.nikasov.design.AppTypography
 import com.nikasov.design.Dimensions

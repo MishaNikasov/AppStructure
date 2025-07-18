@@ -41,15 +41,6 @@ data class Dimensions(
 
     /** Input field **/
     val inputFieldHeight: Dp = 36.dp,
-
-    /** Bottom navigation **/
-    val bottomNavigationHeight: Dp = 56.dp,
-    val bottomNavigationSpacing: Dp = 34.dp,
-    val bottomNavigationItemSize: Dp = 48.dp,
-    val bottomNavigationRadius: Dp = 34.dp,
-    val bottomNavigationHorizontalPadding: Dp = 12.dp,
-    val bottomNavigationVerticalPadding: Dp = 4.dp,
-    val bottomNavigationItemSpacing: Dp = 7.dp,
 )
 
 val LocalDimensions = staticCompositionLocalOf { Dimensions() }
